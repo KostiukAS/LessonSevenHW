@@ -8,6 +8,8 @@
 import UIKit
 
 class EditingViewController: UIViewController {
+    
+    var mainViewColor: UIColor!
 
     @IBOutlet var colorView: UIView!
     
@@ -27,18 +29,35 @@ class EditingViewController: UIViewController {
         super.viewDidLoad()
         
         colorView.layer.cornerRadius = 20
+        colorView.backgroundColor = mainViewColor
+        
+        setColor()
+        setValueForLabel()
+        setValueForTextField()
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // View color
+    private func setColor() {
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value),
+                                            green: CGFloat(greenSlider.value),
+                                            blue: CGFloat(blueSlider.value),
+                                            alpha: 1)
     }
-    */
+    
+    private func setValueForLabel() {
+        redLabel.text = string(from: redSlider)
+        greenLabel.text = string(from: greenSlider)
+        blueLabel.text = string(from: blueSlider)
+    }
+    
+    private func setValueForTextField() {
+        redTextField.text = string(from: redSlider)
+        greenTextField.text = string(from: greenSlider)
+        blueTextField.text = string(from: blueSlider)
+    }
+    
+    private func string(from slider: UISlider) -> String {
+        return String(format: "%.2f", slider.value)
+    }
 
 }

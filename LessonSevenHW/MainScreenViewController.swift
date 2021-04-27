@@ -13,14 +13,13 @@ class MainScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let background = mainView.backgroundColor else { return }
         guard segue.identifier ==  "editSegue" else { return }
         let editVC = segue.destination as! EditingViewController
-        editVC.colorView.backgroundColor = background
+        editVC.mainViewColor = background
     }
 }
 
