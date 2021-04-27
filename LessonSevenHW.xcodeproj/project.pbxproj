@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		84945CE5263870EB0083E767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945CE4263870EB0083E767 /* AppDelegate.swift */; };
 		84945CE7263870EB0083E767 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945CE6263870EB0083E767 /* SceneDelegate.swift */; };
-		84945CE9263870EB0083E767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945CE8263870EB0083E767 /* ViewController.swift */; };
+		84945CE9263870EB0083E767 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945CE8263870EB0083E767 /* MainScreenViewController.swift */; };
 		84945CEC263870EB0083E767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84945CEA263870EB0083E767 /* Main.storyboard */; };
 		84945CEE263870ED0083E767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84945CED263870ED0083E767 /* Assets.xcassets */; };
 		84945CF1263870ED0083E767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84945CEF263870ED0083E767 /* LaunchScreen.storyboard */; };
+		84945CFC26387B360083E767 /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945CFB26387B360083E767 /* EditingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84945CE1263870EB0083E767 /* LessonSevenHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonSevenHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84945CE4263870EB0083E767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84945CE6263870EB0083E767 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84945CE8263870EB0083E767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84945CE8263870EB0083E767 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		84945CEB263870EB0083E767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84945CED263870ED0083E767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84945CF0263870ED0083E767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84945CF2263870ED0083E767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84945CFB26387B360083E767 /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				84945CE4263870EB0083E767 /* AppDelegate.swift */,
 				84945CE6263870EB0083E767 /* SceneDelegate.swift */,
-				84945CE8263870EB0083E767 /* ViewController.swift */,
+				84945CE8263870EB0083E767 /* MainScreenViewController.swift */,
 				84945CEA263870EB0083E767 /* Main.storyboard */,
+				84945CFB26387B360083E767 /* EditingViewController.swift */,
 				84945CED263870ED0083E767 /* Assets.xcassets */,
 				84945CEF263870ED0083E767 /* LaunchScreen.storyboard */,
 				84945CF2263870ED0083E767 /* Info.plist */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84945CE9263870EB0083E767 /* ViewController.swift in Sources */,
+				84945CE9263870EB0083E767 /* MainScreenViewController.swift in Sources */,
+				84945CFC26387B360083E767 /* EditingViewController.swift in Sources */,
 				84945CE5263870EB0083E767 /* AppDelegate.swift in Sources */,
 				84945CE7263870EB0083E767 /* SceneDelegate.swift in Sources */,
 			);
