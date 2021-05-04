@@ -21,7 +21,7 @@
                     <navigationItem key="navigationItem" id="fZE-Nu-Mpv">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="ldJ-fY-aSk">
                             <connections>
-                                <segue destination="QDT-rV-PN6" kind="show" identifier="editSegue" id="vaV-Ar-2xh"/>
+                                <segue destination="QDT-rV-PN6" kind="show" id="vaV-Ar-2xh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -104,16 +104,25 @@
                                                 <rect key="frame" x="-2" y="0.0" width="76" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemBackgroundColor"/>
+                                                <connections>
+                                                    <action selector="redSlider:" destination="QDT-rV-PN6" eventType="valueChanged" id="ysm-k0-l2D"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Lp6-KQ-xkl">
                                                 <rect key="frame" x="-2" y="36" width="76" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemBackgroundColor"/>
+                                                <connections>
+                                                    <action selector="greenSlider:" destination="QDT-rV-PN6" eventType="valueChanged" id="Stq-lY-QLQ"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Scr-K0-sXw">
                                                 <rect key="frame" x="-2" y="72" width="76" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemBackgroundColor"/>
+                                                <connections>
+                                                    <action selector="blueSlider:" destination="QDT-rV-PN6" eventType="valueChanged" id="wmt-Ao-89J"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -125,12 +134,12 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0z9-2C-XxS">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0z9-2C-XxS">
                                                 <rect key="frame" x="0.0" y="35" width="72" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="obO-Wi-p91">
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="obO-Wi-p91">
                                                 <rect key="frame" x="0.0" y="70" width="72" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
